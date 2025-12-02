@@ -1,0 +1,44 @@
+.filebar {
+  width: 200px;
+  background-color: #262626;
+  color: white;
+  padding: 15px;
+}
+
+.selectable-folder {
+  cursor: pointer;
+}
+
+.selectable-folder.selected {
+  background-color: #333333;
+  border-left: 2px solid #b50205;
+  border-radius: 8px;
+}
+
+.selectable-file {
+  cursor: pointer;
+}
+
+.selectable-file.selected {
+  background-color: #b50205;
+  border-left: 3px solid #000000;
+  border-radius: 8px;
+}
+
+.filebar h4 {
+  margin-bottom: 10px;
+}
+
+.filebar ul {
+  list-style: none;
+}
+
+.filebar li {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.filebar li:hover {
+  background-color: #650103;
+  border-radius: 10px;
+}

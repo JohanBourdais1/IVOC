@@ -1,0 +1,21 @@
+.editor-panel {
+  flex: 1;
+  min-height: 0;
+}
+
+.monaco-editor,
+.monaco-editor .overflow-guard {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.monaco-editor .monaco-scrollable-element > .scrollbar.vertical > .slider {
+  opacity: 0          !important;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 50px;
+}
+
+.monaco-editor:hover
+.monaco-scrollable-element > .scrollbar.vertical > .slider {
+  opacity: 1          !important;
+}

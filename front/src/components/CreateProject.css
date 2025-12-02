@@ -1,0 +1,89 @@
+.create-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  margin-top: 100vh;
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.create-panel h1 {
+  margin-bottom: 20px;
+}
+
+.create-panel h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #040709;
+}
+
+.create-panel form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.create-panel form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 4px;
+}
+
+.create-panel form input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-panel form input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.create-panel .close {
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.create-panel .close:hover {
+    opacity: 1;
+}
+
+.create-panel .close:before,
+.create-panel .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.create-panel .close:before {
+    transform: rotate(45deg);
+}
+.create-panel .close:after {
+    transform: rotate(-45deg);
+}
+
+.create-panel form img {
+  padding-left: 20px;
+  margin-right: 10px;
+}

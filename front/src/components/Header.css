@@ -1,0 +1,104 @@
+.header {
+  height: 45px;
+  background-color: #404040;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-panels {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-file{
+  position: absolute;
+  left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-file{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.toggle-project {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.file-selected {
+  box-sizing: border-box;
+  border: 0.1rem solid #a6a6a6;
+  border-radius: 10px;
+  padding: 6px;
+  background-color: #262626;
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.file-name {
+  font-style: italic;
+  color: white;
+}
+
+
+.file-selected:has(.file-name:empty) {
+    display: none;
+}
+
+.edit-mode-indicator {
+  position: fixed;
+  top: 7px;
+  right: 20%;
+  z-index: 9999;
+  background: rgba(20,180,90,0.97);
+  color: #fff;
+  padding: 5px 24px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 10px;
+  box-shadow: 0 2px 18px #0005;
+  border: 2px solid #2be285;
+  animation: editModeFadeIn 0.3s;
+  pointer-events: none;
+}
+
+@keyframes editModeFadeIn {
+  from { opacity: 0; transform: translateY(-18px);}
+  to { opacity: 1; transform: none;}
+}
